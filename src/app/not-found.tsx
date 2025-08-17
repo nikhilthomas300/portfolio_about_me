@@ -20,6 +20,7 @@ export default function NotFound() {
         'echo "// TODO: Implement this page"',
         'echo "¯\\_(ツ)_/¯ # 404 not found"',
     ];
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const randomLine = useMemo(() => funLines[Math.floor(Math.random() * funLines.length)], []);
 
     return (
